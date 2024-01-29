@@ -4,7 +4,7 @@
 
 ## Turinys (Table of contents)
 1. [Riešutų automatas](#riesutai)
-2. [Some paragraph](#paragraph1)
+2. [Prisijungimas prie svetainės, word, excel failo redagavimas, filmų paieška](#paragraph2)
     1. [Sub paragraph](#subparagraph1)
 3. [Another paragraph](#paragraph2)
 
@@ -29,4 +29,14 @@
 ![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/0391ba6e-d424-4b5f-8126-81de3d1f3bdc)  
 ![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/48e282c3-88a4-4150-9721-7c1f1ce0a502)  
 
+
+
+## Prisijungimas prie svetainės, word failo redagavimas, filmų paieška: <a name="paragraph2"></a>  
+### Prisijungimo informormacijos įvedimas:  
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/6bb62d4d-f216-41a0-bdf9-f6d2e3ce7498)
+### Automatinis informacijos „ištraukimas“ ir įrašymas į excel failą:  
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/fe2098fe-30fa-4b25-b8b3-92dc79c5975e)
+### Į teksto lauką suvedamas tekstas ir su UiPath Studio programos pagalba tekstas įrašomas į word failą:  
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/9eae829f-6352-4428-8df8-2fb2f64202a6)
+### Panašus veikimas ir su filmų paieška.
 
