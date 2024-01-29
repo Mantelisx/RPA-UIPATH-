@@ -6,7 +6,7 @@
 1. [Riešutų automatas](#riesutai)
 2. [Prisijungimas prie svetainės, word, excel failo redagavimas, filmų paieška](#paragraph2)
     1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+3. [Duomenų nuskaitymas ir apdorojimas iš failo](#paragraph3)
 
 ## Riešutų pardavimų automato realizacija (Realization of the nut vending machine):<a name="riesutai"></a>  
 
@@ -33,10 +33,36 @@
 
 ## Prisijungimas prie svetainės, word failo redagavimas, filmų paieška: <a name="paragraph2"></a>  
 ### Prisijungimo informormacijos įvedimas:  
-![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/6bb62d4d-f216-41a0-bdf9-f6d2e3ce7498)
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/6bb62d4d-f216-41a0-bdf9-f6d2e3ce7498)  
 ### Automatinis informacijos „ištraukimas“ ir įrašymas į excel failą:  
-![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/fe2098fe-30fa-4b25-b8b3-92dc79c5975e)
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/fe2098fe-30fa-4b25-b8b3-92dc79c5975e)  
 ### Į teksto lauką suvedamas tekstas ir su UiPath Studio programos pagalba tekstas įrašomas į word failą:  
-![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/9eae829f-6352-4428-8df8-2fb2f64202a6)
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/9eae829f-6352-4428-8df8-2fb2f64202a6)  
 ### Panašus veikimas ir su filmų paieška.
+
+
+
+
+
+## Darbas su failais: <a name="paragraph3"></a>  
+Roboto veikimo paaiškinimas: iš pradžių robotas nuskaito duotus failus (.csv, .xlsx), juose esančia informaciją išsaugo „DataTable“ formatu, tada sukuria informacinių lentelių struktūras, kurios po to bus panaudotos išvesti lentelei į .xlsx dokumentą (Rezultatai.xlsx). Po lentelių struktūros kūrimo yra nuspalvinamos .xlsx rezultatų failo atitinkamos vietos t.y. ruošiamas pateikimo dizainas. Toliau atliekami veiksmai yra skirti darbui su nuskaitytais failais: iš .csv failo gaunamas bankrutavimo statusas, kliento vardas, tada su .xlsx failu lyginami klientų vardai ir jei jie sutampa – pasikartojimų skaičius didinamas vienetu, sąskaitos suma pridedama prie to kliento galutinės sąskaitų sumos t.y. suma bus kaupiama. Galiausiai, turint anksčiau minėtą informaciją, robotukas ieško mažiausių/didžiausių (ne)bankrutavusių klientų sąskaitų, rūšiuoja klientus pagal bankrutavimo statusą (tam buvo galima naudoti „Filter Data Table“ veiklą pakeičiant didelę dalį roboto veiksenos, tačiau pasirinktas kitas būdas) bei išveda rezultatus į dokumento „Rezultatai.xlsx.“ atskirus „lapus“ „Bankrotas“, „Nebankrotas“ pagal tai ar klientai bankrutavę ar nebankrutavę.
+
+### Duomenų srauto diagrama:  
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/81469f3c-47e7-41f5-b6b6-72e07341547c)  
+
+### Automatiškai sukurto ir suformatuoto excel failo turinys:  
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/ec271b9e-acb4-41cd-a451-d934eab31159)  
+### Įvesties duomenų failo turinio fragmentas:  
+InvoiceID	ClientName	InvoiceValue  
+1	Agitude	250  
+2	Multiveo	200  
+3	Unit&Products Inc.	210  
+4	BiLane	160  
+5	Epiloo	100  
+6	Agitude	400  
+7	Tech&Nation	250  
+8	Tech&Nation	360  
+9	Unindu	120  
+10	Antinyx	850  
+11	Tech&Nation	150  
 
