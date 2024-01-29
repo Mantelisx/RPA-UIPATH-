@@ -5,8 +5,9 @@
 ## Turinys (Table of contents)
 1. [Riešutų automatas](#riesutai)
 2. [Prisijungimas prie svetainės, word, excel failo redagavimas, filmų paieška](#paragraph2)
-    1. [Sub paragraph](#subparagraph1)
 3. [Duomenų nuskaitymas ir apdorojimas iš failo](#paragraph3)
+4. [Valiutų kursų radimas interneto naršyklėje](#paragraph4)
+5. [Elektroninių laiškų priedų atsisiuntimas ir apdorojimas](#paragraph5)
 
 ## Riešutų pardavimų automato realizacija (Realization of the nut vending machine):<a name="riesutai"></a>  
 
@@ -66,3 +67,25 @@ InvoiceID	ClientName	InvoiceValue
 10	Antinyx	850  
 11	Tech&Nation	150  
 
+
+
+
+
+
+
+
+
+
+
+
+
+## Valiutų kursų radimas: <a name="paragraph4"></a>  
+Automatinio roboto veikimo aprašymas: atsidarius naują naršyklės langą įvedamas eurų į tam tikrą valiutą keitimo tekstas (pvz.: „eur to usd“), paimamos datos ir kurso reikšmės tuo metu kai buvo ieškoma (kada atnaujinta). Duomenys surašomi į lentelę („Valiutų kursai“) ir pagal tą pačią kursų lentelę užpildoma kita lentelė „Konvertuota valiuta“, kurioje pagal pateiktas eurų valiutos reikšmes apskaičiuojamos kitų valiutų reikšmės pagal valiutų kursą. Excel failo struktūra ir dizainas sukuriamas automatiškai.  
+### Excel failo turinys:  
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/0337d4ef-3cc4-42b0-bf3d-b515f7edf472)  
+
+### Visual Basic kodo fragmentas:  
+![paveikslas](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/347d1c57-5000-486a-ad8d-573c8e4edf47)  
+
+## Elektroniniai laiškai: <a name="paragraph5"></a>  
+Roboto veikimo paaiškinimas: iš nustatytos „Outlook 365“ paskyros robotukas pasirenka reikiamą laišką su priedais, juos išsaugo kataloge „Priedai“, taip pat, išsaugoma siuntėjo ir siuntimo laiko informacija. Kitame žingsnyje robotas sukuria lentelę („DataTable“), kurioje kaups duomenis iš sąskaitų faktūrų (šiame etape tie duomenys ir yra renkami). Vėliau visa sukaupta lentelė yra įrašoma į „6PD_ManJan.xlsx“ dokumentą, jis suformatuojamas ir išsaugomas. Galiausiai, nurodytam gavėjui išsiunčiamas laiškas su šabloniniu tekstu ir anksčiau minėtu dokumentu kaip priedu. 
