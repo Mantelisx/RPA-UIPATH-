@@ -2,7 +2,13 @@
 
 ## Robotic process automation projects using UiPath software.
 
-### Riešutų pardavimų automato realizacija (Realization of the nut vending machine):  
+## Turinys (Table of contents)
+1. [Riešutų automatas](#riesutai)
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#paragraph2)
+
+### Riešutų pardavimų automato realizacija (Realization of the nut vending machine):<a name="riesutai"></a>  
 
 Duomenų srauto diagrama (Flowchart):
 ![vpr](https://github.com/Mantelisx/RPA-UIPATH-/assets/92160605/0e4e693c-9fac-47ec-a47e-544d5c57e8e0)
